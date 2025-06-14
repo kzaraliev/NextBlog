@@ -154,7 +154,7 @@ export default async function BlogPage() {
                   <div className="mt-6">
                     <Link
                       href="/contacts"
-                      className="inline-flex items-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 transition-colors"
+                      className="inline-flex items-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-orange-600 transition-colors"
                     >
                       Свържете се с нас
                     </Link>
@@ -179,7 +179,7 @@ export default async function BlogPage() {
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
                     href="/contacts"
-                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
                   >
                     Станете партньор
                   </Link>
