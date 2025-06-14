@@ -78,7 +78,7 @@ export default function HomePage() {
     "@type": "Organization",
     "name": "Ketaring.bg",
     "url": "https://ketaring.bg",
-    "logo": "https://img.icons8.com/color/48/000000/restaurant-menu.png",
+    "logo": "/logo.png",
     "description": "Платформа за кетъринг услуги, свързваща ресторанти с клиенти в България",
     "address": {
       "@type": "PostalAddress",

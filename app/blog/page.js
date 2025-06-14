@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getAllPosts } from '../../lib/posts';
+import Image from 'next/image';
 
 // SEO metadata for better search engine optimization
 export const metadata = {
@@ -45,7 +46,7 @@ export default async function BlogPage() {
     "publisher": {
       "@type": "Organization",
       "name": "Ketaring.bg",
-      "logo": "https://img.icons8.com/color/48/000000/restaurant-menu.png"
+      "logo": "/logo.png"
     },
     "blogPost": posts.map(post => ({
       "@type": "BlogPosting",
@@ -98,7 +99,9 @@ export default async function BlogPage() {
                 {posts.map((post) => (
                   <article key={post.id} className="flex flex-col items-start justify-between group">
                     <div className="relative w-full">
-                      <img
+                      <Image
+                        width={384}
+                        height={256}
                         alt={post.title}
                         src={post.imageUrl}
                         className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2 group-hover:opacity-90 transition-opacity"
@@ -124,7 +127,9 @@ export default async function BlogPage() {
                         <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">{post.description}</p>
                       </div>
                       <div className="relative mt-8 flex items-center gap-x-4">
-                        <img 
+                        <Image
+                          width={40}
+                          height={40}
                           alt={post.author.name} 
                           src={post.author.imageUrl} 
                           className="size-10 rounded-full bg-gray-100" 

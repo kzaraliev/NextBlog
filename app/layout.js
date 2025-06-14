@@ -48,7 +48,7 @@ export const metadata = {
     canonical: "https://ketaring.bg",
   },
   icons: {
-    icon: "https://img.icons8.com/color/48/000000/restaurant-menu.png",
+    icon: "/logo.png",
   },
 };
 
@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
               "name": "Ketaring.bg",
               "description": "Водещата платформа за кетъринг услуги в България. Свързваме ресторанти и клиенти за незабравими кулинарни преживявания.",
               "url": "https://ketaring.bg",
-              "logo": "https://img.icons8.com/color/48/000000/restaurant-menu.png",
+              "logo": "/logo.png",
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+359-888-123-456",

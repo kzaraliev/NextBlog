@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getAllPosts, getPostBySlug } from '../../../lib/posts';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
@@ -86,7 +87,7 @@ export default async function BlogPost({ params }) {
       name: 'Ketaring.bg',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://img.icons8.com/color/48/000000/restaurant-menu.png'
+        url: '/logo.png'
       }
     },
     datePublished: post.datetime,
@@ -155,7 +156,9 @@ export default async function BlogPost({ params }) {
 
           {/* Author */}
           <div className="mt-6 flex items-center gap-x-4">
-            <img
+            <Image
+              width={48}
+              height={48}
               alt={post.author.name}
               src={post.author.imageUrl}
               className="size-12 rounded-full bg-gray-50"
@@ -168,7 +171,9 @@ export default async function BlogPost({ params }) {
 
           {/* Featured Image */}
           <div className="mt-10 mb-10">
-            <img
+            <Image
+              width={768}
+              height={432}
               alt={post.title}
               src={post.imageUrl}
               className="aspect-video w-full rounded-2xl bg-gray-100 object-cover"
@@ -186,7 +191,9 @@ export default async function BlogPost({ params }) {
           <div className="mt-16 pt-8 border-t border-gray-200">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-x-4">
-                <img
+                <Image
+                  width={40}
+                  height={40}
                   alt={post.author.name}
                   src={post.author.imageUrl}
                   className="size-10 rounded-full bg-gray-50"

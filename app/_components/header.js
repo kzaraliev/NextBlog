@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Начало', href: '/' },
@@ -22,9 +23,11 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Ketaring.bg</span>
             <div className="flex items-center">
-              <img
+              <Image
+                width={32}
+                height={32}
                 alt="Ketaring.bg"
-                src="https://img.icons8.com/color/48/000000/restaurant-menu.png"
+                src="/logo.png"
                 className="h-8 w-auto mr-2"
               />
               <span className="text-xl font-bold text-orange-600">Ketaring.bg</span>
@@ -61,9 +64,11 @@ export default function Header() {
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Ketaring.bg</span>
               <div className="flex items-center">
-                <img
+                <Image
+                  width={32}
+                  height={32}
                   alt="Ketaring.bg"
-                  src="https://img.icons8.com/color/48/000000/restaurant-menu.png"
+                  src="/logo.png"
                   className="h-8 w-auto mr-2"
                 />
                 <span className="text-xl font-bold text-orange-600">Ketaring.bg</span>
