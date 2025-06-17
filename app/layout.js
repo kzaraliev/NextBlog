@@ -5,6 +5,7 @@ import Header from "./_components/header";
 import NextTopLoader from 'nextjs-toploader';
 import Script from 'next/script';
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -95,6 +96,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <Analytics />
+        <SpeedInsights />
         {/* EmailJS Script */}
         <Script
           src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
