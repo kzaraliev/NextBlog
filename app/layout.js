@@ -48,10 +48,7 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://ketaring.bg",
-  },
-  icons: {
-    icon: "/logo.png",
-  },
+  }
 };
 
 export default function RootLayout({ children }) {
