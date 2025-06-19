@@ -6,7 +6,7 @@ category: "Кетъринг съвети"
 author: "Константин Заралиев"
 authorRole: "Основател"
 authorImage: "/avatar.webp"
-image: "/firmen-ketaring.webp"
+image: "/posts/firmen-ketaring.webp"
 slug: "firmeni-sabitia-ketering"
 ---
 

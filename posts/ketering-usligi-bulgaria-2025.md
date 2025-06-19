@@ -6,7 +6,7 @@ category: "Ръководства"
 author: "Петър Георгиев"
 authorRole: "Кетъринг експерт"
 authorImage: "/avatar.webp"
-image: "/ketaring-uslugi.webp"
+image: "/posts/ketaring-uslugi.webp"
 slug: "ketering-usligi-bulgaria-2025"
 ---
 
