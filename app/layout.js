@@ -67,7 +67,6 @@ export default function RootLayout({ children }) {
               "logo": "/logo.png",
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+359-888-123-456",
                 "contactType": "customer service",
                 "email": "info@ketaring.bg"
               },
